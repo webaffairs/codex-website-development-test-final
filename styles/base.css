@@ -1,0 +1,189 @@
+@font-face {
+  font-family: DM Sans;
+  src: url("../assets/fonts/dm-sans-latin-wght-normal.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: Instrument;
+  src: url("../assets/fonts/instrument-serif-latin-400-italic.woff2")
+    format("woff2");
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: Instrument;
+  src: url("../assets/fonts/instrument-serif-latin-400-normal.woff2")
+    format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: Plex;
+  src: url("../assets/fonts/ibm-plex-mono-latin-400-normal.woff2")
+    format("woff2");
+  font-display: swap;
+}
+:root {
+  --ink: #181e27;
+  --navy: #102843;
+  --paper: #fbfaf7;
+  --mist: #efefeb;
+  --white: #fff;
+  --quiet: #555c63;
+  --rule: #cecfca;
+  --accent: #ff762d;
+  --ease: cubic-bezier(0.2, 0.76, 0.25, 0.98);
+  --sweep: cubic-bezier(0.66, 0.04, 0.26, 0.97);
+  font-family: "DM Sans", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+}
+* {
+  box-sizing: border-box;
+}
+body,
+figure,
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+blockquote {
+  margin: 0;
+}
+body {
+  line-height: 1.55;
+}
+a {
+  color: inherit;
+  text-underline-offset: 4px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+svg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+button {
+  border: 0;
+  background: none;
+}
+button,
+a {
+  touch-action: manipulation;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #2676b8;
+  outline-offset: 4px;
+}
+h1,
+h2,
+h3 {
+  font-weight: 520;
+  line-height: 1.03;
+  text-wrap: balance;
+}
+h1 {
+  font-size: clamp(3.8rem, 6.15vw, 6.45rem);
+  letter-spacing: -0.075em;
+}
+h2 {
+  font-size: clamp(2.6rem, 4.2vw, 4.6rem);
+  letter-spacing: -0.065em;
+}
+h3 {
+  font-size: clamp(1.28rem, 2vw, 1.8rem);
+  letter-spacing: -0.045em;
+  line-height: 1.15;
+}
+h1 em,
+h2 em,
+.signature {
+  font-family: Instrument, Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+}
+p {
+  color: var(--quiet);
+}
+p a {
+  text-decoration-thickness: 1px;
+}
+strong {
+  font-weight: 650;
+  color: var(--ink);
+}
+[hidden] {
+  display: none !important;
+}
+:target {
+  scroll-margin-top: 108px;
+}
+::selection {
+  background: #ffd3a9;
+  color: var(--ink);
+}
+.skip {
+  position: fixed;
+  z-index: 20;
+  top: 6px;
+  left: 6px;
+  transform: translateY(-150%);
+  background: white;
+  padding: 0.6rem 1rem;
+}
+.skip:focus {
+  transform: none;
+}
+.eyebrow,
+.mono,
+.caption-kind,
+.sheet-count,
+.mini-foot,
+.board-no,
+.identity figcaption,
+.load-count {
+  font-family: Plex, monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+.eyebrow > span {
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #fc752518;
+}
+.lede,
+.hero-copy > p:not(.eyebrow) {
+  font-size: clamp(1rem, 1.35vw, 1.21rem);
+  line-height: 1.65;
+  max-width: 46ch;
+}

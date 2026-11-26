@@ -1,0 +1,216 @@
+.preload,
+.curtain {
+  position: fixed;
+  inset: 0;
+  z-index: 15;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: var(--paper);
+  pointer-events: none;
+}
+.preload {
+  flex-direction: column;
+  gap: 18px;
+}
+.preload img {
+  width: 88px;
+}
+.load-line {
+  height: 2px;
+  width: 80px;
+  background: linear-gradient(to right, var(--accent) 50%, #ddd 50%);
+  background-size: 200%;
+  animation: load 1.5s var(--ease) both;
+}
+@keyframes load {
+  from {
+    background-position: 100%;
+  }
+  to {
+    background-position: 0%;
+  }
+}
+.loading .preload,
+.departing .curtain,
+.arriving .curtain {
+  display: flex;
+}
+.preload,
+.curtain {
+  transition: clip-path 0.5s var(--sweep);
+  clip-path: inset(0);
+}
+.loading.loaded .preload,
+.arriving.reveal-page .curtain {
+  clip-path: inset(0 0 100% 0);
+}
+.curtain {
+  background: var(--navy);
+}
+.curtain:after {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background:
+    linear-gradient(var(--accent), var(--accent)) center / 100% 1px no-repeat,
+    linear-gradient(var(--accent), var(--accent)) center / 1px 100% no-repeat;
+}
+.departing .curtain {
+  animation: cover 0.47s var(--sweep) both;
+  pointer-events: auto;
+}
+@keyframes cover {
+  from {
+    clip-path: inset(100% 0 0);
+  }
+  to {
+    clip-path: inset(0);
+  }
+}
+.slide:not([hidden]) {
+  animation: settle 0.5s var(--ease);
+}
+@keyframes settle {
+  from {
+    opacity: 0.4;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.motion-ready {
+  transition:
+    opacity 0.64s var(--ease),
+    translate 0.64s var(--ease);
+}
+.motion-ready.waiting {
+  opacity: 0;
+  translate: 0 15px;
+}
+.mast nav a:hover,
+.foot a:hover,
+.directory a:hover {
+  color: #78411e;
+}
+.mast nav a,
+.foot a,
+.directory a {
+  transition: color 0.25s;
+}
+.menu-toggle i {
+  transition: transform 0.34s var(--ease);
+}
+[data-open] .menu-toggle i:first-child {
+  transform: translateY(3.25px) rotate(45deg);
+}
+[data-open] .menu-toggle i:last-child {
+  transform: translateY(-3.25px) rotate(-45deg);
+}
+html.menu-open {
+  overflow: hidden;
+}
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+.button:disabled {
+  opacity: 0.65;
+}
+@media (max-width: 760px) {
+  .mast nav a {
+    transform: translateX(-8px);
+    opacity: 0;
+    transition:
+      opacity 0.24s,
+      transform 0.32s var(--ease);
+  }
+  .mast[data-open] nav a {
+    transform: none;
+    opacity: 1;
+  }
+  .mast[data-open] nav a:nth-child(2) {
+    transition-delay: 35ms;
+  }
+  .mast[data-open] nav a:nth-child(3) {
+    transition-delay: 65ms;
+  }
+  .mast[data-open] nav a:nth-child(4) {
+    transition-delay: 95ms;
+  }
+  .mast[data-open] nav a:last-child {
+    transition-delay: 125ms;
+  }
+}
+@media (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  html.cursor-on *,
+  html.cursor-on *:before,
+  html.cursor-on *:after {
+    cursor: none !important;
+  }
+  .pointer-dot,
+  .pointer-ring {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 24;
+    display: grid;
+    place-content: center;
+    opacity: 0;
+  }
+  .pointer-dot {
+    background: white;
+    width: 6px;
+    height: 6px;
+    margin: -3px;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+  }
+  .pointer-ring {
+    width: 26px;
+    height: 26px;
+    margin: -13px;
+    border: 1px solid white;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transition:
+      scale 0.22s var(--ease),
+      opacity 0.15s;
+  }
+  .pointer-ring.active {
+    scale: 1.35;
+    transform-origin: 0 0;
+  }
+  .cursor-on .pointer-dot,
+  .cursor-on .pointer-ring {
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *:before,
+  *:after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0s !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
+    scroll-behavior: auto !important;
+  }
+  .preload,
+  .curtain {
+    display: none !important;
+  }
+  .motion-ready.waiting {
+    opacity: 1;
+    translate: none;
+  }
+}

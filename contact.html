@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Start a website enquiry | Web Affairs</title>
+    <meta
+      name="description"
+      content="Tell Web Affairs about your website project or find the right studio inbox for changes, questions and cancellations."
+    />
+    <meta property="og:title" content="Start a website enquiry | Web Affairs" />
+    <meta
+      property="og:description"
+      content="Tell Web Affairs about your website project or find the right studio inbox for changes, questions and cancellations."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/favicon.png" />
+    <link
+      rel="preload"
+      href="assets/fonts/dm-sans-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <script>
+      try {
+        if (
+          sessionStorage.getItem("wa-arrival") === location.pathname &&
+          !matchMedia("(prefers-reduced-motion: reduce)").matches
+        )
+          document.documentElement.classList.add("arriving");
+        sessionStorage.removeItem("wa-arrival");
+      } catch {
+        /* Storage is optional. */
+      }
+    </script>
+    <script defer src="assets/vendor/lenis.min.js"></script>
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/animations.js"></script>
+    <noscript
+      ><style>
+        @media (max-width: 760px) {
+          .mast-row {
+            flex-wrap: wrap;
+            padding-block: 10px;
+          }
+          .menu-toggle {
+            display: none;
+          }
+          .mast nav {
+            position: static;
+            visibility: visible;
+            opacity: 1;
+            transform: none;
+            width: 100%;
+            padding: 0;
+            border: 0;
+            box-shadow: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            order: 3;
+          }
+          .mast nav a {
+            transform: none;
+            opacity: 1;
+            border: 0;
+            font-size: 0.85rem;
+            padding: 6px 0;
+          }
+          .mast nav .mobile-email {
+            display: none;
+          }
+        }
+        .gallery-controls {
+          display: none;
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="preload" aria-hidden="true">
+      <img src="assets/webaffairsicon.PNG" alt="" /><span
+        class="load-line"
+      ></span
+      ><span class="load-count">00%</span>
+    </div>
+    <div class="curtain" aria-hidden="true"></div>
+    <header class="mast">
+      <div class="wrap mast-row">
+        <a class="brand" href="index.html" aria-label="Web Affairs home"
+          ><img
+            src="assets/webaffairswordmark.PNG"
+            alt="Web Affairs"
+            width="778"
+            height="130"
+        /></a>
+        <nav aria-label="Primary" id="menu">
+          <a href="index.html">Home</a><a href="services.html">Services</a
+          ><a href="about.html">About us</a
+          ><a href="contact.html" aria-current="page">Contact</a
+          ><a class="mobile-email" href="mailto:queries@domain.com"
+            >queries@domain.com</a
+          >
+        </nav>
+        <a class="button ink" href="contact.html#brief"
+          >Let’s talk<svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M5.5 18.5 18 6M7 6h11v11" /></svg
+        ></a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Open navigation"
+        >
+          <i></i><i></i>
+        </button>
+      </div>
+      <div class="progress" aria-hidden="true"></div>
+    </header>
+    <main id="main">
+      <section class="wrap contact-intro">
+        <p class="eyebrow"><span></span>Contact the studio</p>
+        <h1>Tell us about<br /><em>your business.</em></h1>
+        <p class="lede">
+          A few details help us understand what your site needs to do. We’ll use
+          your email to reply about the project.
+        </p>
+      </section>
+      <section class="wrap contact-grid" id="brief">
+        <div class="form-card">
+          <h2>Start your project brief</h2>
+          <p>Fields marked with an asterisk are required.</p>
+          <form id="project-form" method="post" action="api/enquiries">
+            <div class="field-pair">
+              <label
+                >Your name *<input
+                  name="name"
+                  autocomplete="name"
+                  maxlength="100"
+                  required /></label
+              ><label
+                >Email address *<input
+                  type="email"
+                  name="email"
+                  autocomplete="email"
+                  maxlength="254"
+                  required
+              /></label>
+            </div>
+            <label
+              >Business name<input
+                name="business"
+                autocomplete="organization"
+                maxlength="140"
+            /></label>
+            <label
+              >What should your website do? *<textarea
+                name="message"
+                rows="5"
+                maxlength="4000"
+                required
+                placeholder="Tell us what you offer, who you serve, and what you want visitors to do."
+              ></textarea>
+            </label>
+            <div class="form-actions">
+              <button class="button solid" type="submit">
+                Send my enquiry
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5.5 18.5 18 6M7 6h11v11" />
+                </svg></button
+              ><small
+                >Enquiring starts a conversation. We’ll confirm the scope with
+                you.</small
+              >
+            </div>
+            <div id="form-result" role="status"></div>
+          </form>
+          <noscript
+            ><p>
+              Email your project details to
+              <a href="mailto:queries@domain.com">queries@domain.com</a> if your
+              host serves static pages only.
+            </p></noscript
+          >
+        </div>
+        <aside class="directory">
+          <p class="eyebrow"><span></span>Studio directory</p>
+          <h2>Reach the <em>right inbox.</em></h2>
+          <h3>General questions</h3>
+          <a href="mailto:queries@domain.com"
+            >queries@domain.com
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5.5 18.5 18 6M7 6h11v11" /></svg
+          ></a>
+          <h3>Website changes</h3>
+          <a href="mailto:changes@domain.com"
+            >changes@domain.com
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5.5 18.5 18 6M7 6h11v11" /></svg
+          ></a>
+          <h3>Subscription cancellations</h3>
+          <a href="mailto:cancellation@domain.com"
+            >cancellation@domain.com
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5.5 18.5 18 6M7 6h11v11" /></svg
+          ></a>
+          <div class="address">
+            <span class="mono">BASED IN</span>
+            <p>Indira Nagar, Lucknow, UP<br />India</p>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap foot">
+        <a class="brand" href="index.html" aria-label="Web Affairs home"
+          ><img
+            src="assets/webaffairswordmark.PNG"
+            width="778"
+            height="130"
+            alt="Web Affairs" /></a
+        ><span>Indira Nagar, Lucknow, UP</span
+        ><a href="mailto:queries@domain.com"
+          >queries@domain.com
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M5.5 18.5 18 6M7 6h11v11" /></svg></a
+        ><small>© Web Affairs</small>
+      </div>
+    </footer>
+  </body>
+</html>

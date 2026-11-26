@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Custom websites for $50 a month | Web Affairs</title>
+    <meta
+      name="description"
+      content="Web design, domain, hosting and five monthly change requests for service businesses and freelancers."
+    />
+    <meta
+      property="og:title"
+      content="Custom websites for $50 a month | Web Affairs"
+    />
+    <meta
+      property="og:description"
+      content="Web design, domain, hosting and five monthly change requests for service businesses and freelancers."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/favicon.png" />
+    <link
+      rel="preload"
+      href="assets/fonts/dm-sans-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <script>
+      try {
+        if (
+          sessionStorage.getItem("wa-arrival") === location.pathname &&
+          !matchMedia("(prefers-reduced-motion: reduce)").matches
+        )
+          document.documentElement.classList.add("arriving");
+        sessionStorage.removeItem("wa-arrival");
+      } catch {
+        /* Storage is optional. */
+      }
+    </script>
+    <script defer src="assets/vendor/lenis.min.js"></script>
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/animations.js"></script>
+    <noscript
+      ><style>
+        @media (max-width: 760px) {
+          .mast-row {
+            flex-wrap: wrap;
+            padding-block: 10px;
+          }
+          .menu-toggle {
+            display: none;
+          }
+          .mast nav {
+            position: static;
+            visibility: visible;
+            opacity: 1;
+            transform: none;
+            width: 100%;
+            padding: 0;
+            border: 0;
+            box-shadow: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            order: 3;
+          }
+          .mast nav a {
+            transform: none;
+            opacity: 1;
+            border: 0;
+            font-size: 0.85rem;
+            padding: 6px 0;
+          }
+          .mast nav .mobile-email {
+            display: none;
+          }
+        }
+        .gallery-controls {
+          display: none;
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="preload" aria-hidden="true">
+      <img src="assets/webaffairsicon.PNG" alt="" /><span
+        class="load-line"
+      ></span
+      ><span class="load-count">00%</span>
+    </div>
+    <div class="curtain" aria-hidden="true"></div>
+    <header class="mast">
+      <div class="wrap mast-row">
+        <a class="brand" href="index.html" aria-label="Web Affairs home"
+          ><img
+            src="assets/webaffairswordmark.PNG"
+            alt="Web Affairs"
+            width="778"
+            height="130"
+        /></a>
+        <nav aria-label="Primary" id="menu">
+          <a href="index.html" aria-current="page">Home</a
+          ><a href="services.html">Services</a><a href="about.html">About us</a
+          ><a href="contact.html">Contact</a
+          ><a class="mobile-email" href="mailto:queries@domain.com"
+            >queries@domain.com</a
+          >
+        </nav>
+        <a class="button ink" href="contact.html#brief"
+          >Let’s talk<svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M5.5 18.5 18 6M7 6h11v11" /></svg
+        ></a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Open navigation"
+        >
+          <i></i><i></i>
+        </button>
+      </div>
+      <div class="progress" aria-hidden="true"></div>
+    </header>
+    <main id="main">
+      <section class="wrap hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span>Independent web design studio</p>
+          <h1>Websites that<br />win you <em>clients.</em></h1>
+          <p>
+            Custom websites for service businesses and freelancers. Designed,
+            hosted, and kept up to date for <strong>$50 a month.</strong>
+          </p>
+          <div class="actions">
+            <a class="button solid" href="contact.html#brief"
+              >Build my website<svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5.5 18.5 18 6M7 6h11v11" /></svg></a
+            ><a class="button bare" href="services.html"
+              >Explore the plan<svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+            ></a>
+          </div>
+          <div class="micro-facts">
+            <span
+              ><svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m4 12 5 5L20 6" />
+              </svg>
+              Domain</span
+            ><span
+              ><svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m4 12 5 5L20 6" />
+              </svg>
+              Hosting</span
+            ><span
+              ><svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m4 12 5 5L20 6" />
+              </svg>
+              5 monthly changes</span
+            >
+          </div>
+        </div>
+        <figure
+          class="gallery"
+          aria-label="Interactive gallery of studio concept designs"
+        >
+          <div class="gallery-stage">
+            <div
+              class="slide"
+              data-name="Forma Studio"
+              data-kind="Architecture"
+            >
+              <div class="artboard blue">
+                <div class="board-no">WA — DESIGN STUDY</div>
+                <i class="reg tl"></i><i class="reg tr"></i
+                ><i class="reg bl"></i><i class="reg br"></i>
+                <div class="browser">
+                  <div class="browser-bar">
+                    <span></span><span></span><span></span><b></b>
+                  </div>
+                  <div class="mini-nav">
+                    <strong>Forma<span>.</span></strong
+                    ><small>ARCHITECTURE STUDIO</small><i>☰</i>
+                  </div>
+                  <div class="arch-image">
+                    <img
+                      src="assets/forma-house.webp"
+                      width="1500"
+                      height="1000"
+                      fetchpriority="high"
+                      alt="A sunlit travertine house overlooking a reflecting pool in the Forma architecture study"
+                    />
+                    <div class="arch-copy">
+                      <small>RESIDENTIAL &nbsp; / &nbsp; SELECTED WORK</small
+                      ><b>Quiet by<br /><em>design.</em></b>
+                    </div>
+                    <span class="mini-circle">↗</span>
+                  </div>
+                  <div class="mini-foot">
+                    SPACES FOR SLOW LIVING <span>01 / 04</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="slide"
+              hidden
+              data-name="Form &amp; Field"
+              data-kind="Design"
+            >
+              <div class="artboard coral">
+                <div class="board-no">WA — DESIGN STUDY</div>
+                <i class="reg tl"></i><i class="reg tr"></i
+                ><i class="reg bl"></i><i class="reg br"></i>
+                <div class="browser">
+                  <div class="browser-bar">
+                    <span></span><span></span><span></span><b></b>
+                  </div>
+                  <div class="poster-top">FIELD OFFICE <b>®</b></div>
+                  <div class="poster">
+                    <div class="poster-sculpture"></div>
+                    <b>Form<br /><em>&amp; Field.</em></b>
+                  </div>
+                  <div class="mini-foot">
+                    INDEPENDENT DESIGN PRACTICE <span>ED. 02</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="slide"
+              hidden
+              data-name="Index Press"
+              data-kind="Publishing"
+            >
+              <div class="artboard sage">
+                <div class="board-no">WA — DESIGN STUDY</div>
+                <i class="reg tl"></i><i class="reg tr"></i
+                ><i class="reg bl"></i><i class="reg br"></i>
+                <div class="browser">
+                  <div class="browser-bar">
+                    <span></span><span></span><span></span><b></b>
+                  </div>
+                  <div class="typehead">Index Press <span>✳</span></div>
+                  <div class="typeart">
+                    <span>Aa</span><i>Notes on<br />the letterform.</i>
+                  </div>
+                  <div class="mini-foot">
+                    TYPOGRAPHIC EDITIONS <span>VOL. 03</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <div class="caption-copy" aria-live="polite">
+              <span class="sheet-count">01 / 03</span
+              ><span class="caption-name">Forma Studio</span
+              ><span class="caption-kind">Architecture</span>
+            </div>
+            <div class="gallery-controls">
+              <button
+                type="button"
+                data-step="-1"
+                aria-label="Previous design study"
+              >
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m14 6-6 6 6 6" />
+                </svg></button
+              ><button
+                type="button"
+                data-step="1"
+                aria-label="Next design study"
+              >
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m10 6 6 6-6 6" />
+                </svg>
+              </button>
+            </div>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="friction">
+        <div class="wrap friction-inner">
+          <p class="eyebrow"><span></span>The studio approach</p>
+          <div>
+            <h2>Your website shouldn’t be<br />a <em>second job.</em></h2>
+            <p>
+              Web Affairs brings design, hosting, and updates together so you
+              can spend more time with clients.
+            </p>
+          </div>
+        </div>
+        <ul class="wrap friction-list">
+          <li>
+            <b>Edits that pile up</b>
+            <p>
+              Old prices and outdated photos linger while you chase someone to
+              change them.
+            </p>
+          </li>
+          <li>
+            <b>Renewals to track</b>
+            <p>
+              Separate domain and hosting bills give you two more deadlines to
+              remember.
+            </p>
+          </li>
+          <li>
+            <b>Leads that drift away</b>
+            <p>
+              When people have to hunt for your services or contact details, a
+              promising visit can end early.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="wrap block">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span></span>Inside the subscription</p>
+            <h2>One plan. <em>Covered.</em></h2>
+          </div>
+          <p>
+            From the first impression to the next update, here’s what your
+            monthly fee pays for.
+          </p>
+        </div>
+        <div class="cards">
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M2 9h20m-16-3v1m3-1v1" />
+              </svg>
+            </div>
+            <h3>Make the right first impression</h3>
+            <p>
+              A custom website makes your service easy to understand and gives
+              visitors a clear reason to get in touch.
+            </p>
+            <ul>
+              <li>Design around your offering</li>
+              <li>Responsive layouts</li>
+              <li>Enquiry-focused pages</li>
+            </ul>
+            <a class="text-link" href="services.html#design"
+              >Explore design<svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+            ></a>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="9" />
+                <ellipse cx="12" cy="12" rx="4" ry="9" />
+                <path d="M3 12h18" />
+              </svg>
+            </div>
+            <h3>Get your address and space online</h3>
+            <p>
+              Your domain and hosting sit inside one subscription, with one
+              studio to contact about your website.
+            </p>
+            <ul>
+              <li>Domain included</li>
+              <li>Hosting included</li>
+              <li>One monthly price</li>
+            </ul>
+            <a class="text-link" href="services.html#infrastructure"
+              >See what’s included<svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+            ></a>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="5" width="20" height="14" rx="2" />
+                <path d="m3 6 9 7 9-7" />
+              </svg>
+            </div>
+            <h3>Keep up with your business</h3>
+            <p>
+              Send a list of edits in one email. Each email counts as one of
+              your five monthly change requests.
+            </p>
+            <ul>
+              <li>Five requests per month</li>
+              <li>Multiple instructions per email</li>
+              <li>Dedicated changes inbox</li>
+            </ul>
+            <a class="text-link" href="services.html#updates"
+              >See how edits work<svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+            ></a>
+          </article>
+        </div>
+      </section>
+      <section class="study-section">
+        <div class="wrap study-detail">
+          <div class="sample">
+            <div class="artboard coral">
+              <div class="board-no">WA — DESIGN STUDY</div>
+              <i class="reg tl"></i><i class="reg tr"></i><i class="reg bl"></i
+              ><i class="reg br"></i>
+              <div class="browser">
+                <div class="browser-bar">
+                  <span></span><span></span><span></span><b></b>
+                </div>
+                <div class="poster-top">FIELD OFFICE <b>®</b></div>
+                <div class="poster">
+                  <div class="poster-sculpture"></div>
+                  <b>Form<br /><em>&amp; Field.</em></b>
+                </div>
+                <div class="mini-foot">
+                  INDEPENDENT DESIGN PRACTICE <span>ED. 02</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="eyebrow"><span></span>Inside a design study</p>
+            <h2>Make your specialty <em>visible.</em></h2>
+            <p>
+              For the Form &amp; Field concept, the challenge was showing a
+              designer’s point of view before a visitor starts reading. A
+              sculptural mark and a two-line title bring the practice into focus
+              in one screen.
+            </p>
+            <a class="text-link" href="about.html"
+              >Meet the studio behind the work
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section class="wrap block">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span></span>From brief to launch</p>
+            <h2>Get online in <em>three steps.</em></h2>
+          </div>
+        </div>
+        <ol class="steps">
+          <li>
+            <h3>Tell us what you do</h3>
+            <p>
+              Send your service, audience, and website goals in the project
+              form.
+            </p>
+          </li>
+          <li>
+            <h3>Shape the website</h3>
+            <p>
+              We reply to your brief and work through the pages, content, and
+              scope with you.
+            </p>
+          </li>
+          <li>
+            <h3>Keep it current</h3>
+            <p>
+              Once your site is live, email your changes as your business grows.
+            </p>
+          </li>
+        </ol>
+      </section>
+      <aside class="studio-note">
+        <div class="wrap">
+          <img src="assets/webaffairsicon.PNG" alt="" width="80" height="40" />
+          <div>
+            <h2>A studio you can <em>reach.</em></h2>
+            <p>
+              Based in Indira Nagar, Lucknow, our team handles design and
+              ongoing changes. Your first enquiry starts a conversation about
+              scope before you commit.
+            </p>
+          </div>
+        </div>
+      </aside>
+      <section class="wrap block faq-layout">
+        <div>
+          <p class="eyebrow"><span></span>Before you start</p>
+          <h2>Know what you’re <em>getting.</em></h2>
+        </div>
+        <div class="faq">
+          <div class="qa">
+            <h3>
+              <button
+                type="button"
+                aria-expanded="true"
+                aria-controls="answer-0"
+              >
+                What does $50 a month cover?<span aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="answer" id="answer-0">
+              <div>
+                <p>
+                  It covers a custom website, domain, hosting, and five monthly
+                  change requests. Describe any special functionality in your
+                  brief so we can confirm the scope.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="qa">
+            <h3>
+              <button
+                type="button"
+                aria-expanded="true"
+                aria-controls="answer-1"
+              >
+                How soon can I launch?<span aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="answer" id="answer-1">
+              <div>
+                <p>
+                  We discuss timing after reviewing your pages and content.
+                  Include a target launch date in your first message so we can
+                  plan around it.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="qa">
+            <h3>
+              <button
+                type="button"
+                aria-expanded="true"
+                aria-controls="answer-2"
+              >
+                How do my five changes work?<span aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="answer" id="answer-2">
+              <div>
+                <p>
+                  One change is one email with a list of instructions. Send it
+                  to changes@domain.com and use your five monthly requests for
+                  the updates you need.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="qa">
+            <h3>
+              <button
+                type="button"
+                aria-expanded="true"
+                aria-controls="answer-3"
+              >
+                What happens if I cancel?<span aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="answer" id="answer-3">
+              <div>
+                <p>
+                  Send cancellation questions to cancellation@domain.com. Ask us
+                  about domain ownership, site files, and handover terms before
+                  you subscribe.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="closing">
+        <div class="wrap close-inner">
+          <div>
+            <p class="eyebrow"><span></span>Start your website</p>
+            <h2>Let’s put your business <em>online.</em></h2>
+            <p>
+              Tell us what you do and what you need. We’ll reply to your brief
+              before you choose a plan.
+            </p>
+          </div>
+          <a class="button paper" href="contact.html#brief"
+            >Start my brief<svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5.5 18.5 18 6M7 6h11v11" /></svg
+          ></a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap foot">
+        <a class="brand" href="index.html" aria-label="Web Affairs home"
+          ><img
+            src="assets/webaffairswordmark.PNG"
+            width="778"
+            height="130"
+            alt="Web Affairs" /></a
+        ><span>Indira Nagar, Lucknow, UP</span
+        ><a href="mailto:queries@domain.com"
+          >queries@domain.com
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M5.5 18.5 18 6M7 6h11v11" /></svg></a
+        ><small>© Web Affairs</small>
+      </div>
+    </footer>
+  </body>
+</html>

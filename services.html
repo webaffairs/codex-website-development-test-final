@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website subscription and services | Web Affairs</title>
+    <meta
+      name="description"
+      content="Explore the $50 monthly website subscription, including design, domain, hosting and ongoing changes."
+    />
+    <meta
+      property="og:title"
+      content="Website subscription and services | Web Affairs"
+    />
+    <meta
+      property="og:description"
+      content="Explore the $50 monthly website subscription, including design, domain, hosting and ongoing changes."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/favicon.png" />
+    <link
+      rel="preload"
+      href="assets/fonts/dm-sans-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <script>
+      try {
+        if (
+          sessionStorage.getItem("wa-arrival") === location.pathname &&
+          !matchMedia("(prefers-reduced-motion: reduce)").matches
+        )
+          document.documentElement.classList.add("arriving");
+        sessionStorage.removeItem("wa-arrival");
+      } catch {
+        /* Storage is optional. */
+      }
+    </script>
+    <script defer src="assets/vendor/lenis.min.js"></script>
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/animations.js"></script>
+    <noscript
+      ><style>
+        @media (max-width: 760px) {
+          .mast-row {
+            flex-wrap: wrap;
+            padding-block: 10px;
+          }
+          .menu-toggle {
+            display: none;
+          }
+          .mast nav {
+            position: static;
+            visibility: visible;
+            opacity: 1;
+            transform: none;
+            width: 100%;
+            padding: 0;
+            border: 0;
+            box-shadow: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            order: 3;
+          }
+          .mast nav a {
+            transform: none;
+            opacity: 1;
+            border: 0;
+            font-size: 0.85rem;
+            padding: 6px 0;
+          }
+          .mast nav .mobile-email {
+            display: none;
+          }
+        }
+        .gallery-controls {
+          display: none;
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="preload" aria-hidden="true">
+      <img src="assets/webaffairsicon.PNG" alt="" /><span
+        class="load-line"
+      ></span
+      ><span class="load-count">00%</span>
+    </div>
+    <div class="curtain" aria-hidden="true"></div>
+    <header class="mast">
+      <div class="wrap mast-row">
+        <a class="brand" href="index.html" aria-label="Web Affairs home"
+          ><img
+            src="assets/webaffairswordmark.PNG"
+            alt="Web Affairs"
+            width="778"
+            height="130"
+        /></a>
+        <nav aria-label="Primary" id="menu">
+          <a href="index.html">Home</a
+          ><a href="services.html" aria-current="page">Services</a
+          ><a href="about.html">About us</a><a href="contact.html">Contact</a
+          ><a class="mobile-email" href="mailto:queries@domain.com"
+            >queries@domain.com</a
+          >
+        </nav>
+        <a class="button ink" href="contact.html#brief"
+          >Let’s talk<svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M5.5 18.5 18 6M7 6h11v11" /></svg
+        ></a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Open navigation"
+        >
+          <i></i><i></i>
+        </button>
+      </div>
+      <div class="progress" aria-hidden="true"></div>
+    </header>
+    <main id="main">
+      <section class="wrap inner-hero spec-hero">
+        <div>
+          <p class="eyebrow"><span></span>Website subscription</p>
+          <h1>A clear plan for<br />your <em>website.</em></h1>
+          <p class="lede">
+            Bring your services, your story, and a rough idea of who you want to
+            reach. We’ll shape them into a website and look after it month by
+            month.
+          </p>
+        </div>
+        <aside class="price-sheet">
+          <span class="mono">WEB AFFAIRS / THE PLAN</span>
+          <div><b>$50</b><span>/ month</span></div>
+          <p>
+            Custom web design, domain, hosting, and five change requests each
+            month.
+          </p>
+          <a class="button paper" href="contact.html#brief"
+            >Discuss my subscription<svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5.5 18.5 18 6M7 6h11v11" /></svg
+          ></a>
+        </aside>
+      </section>
+      <section class="wrap specification block">
+        <div>
+          <p class="eyebrow"><span></span>Plan details</p>
+          <h2>See where your <em>$50 goes.</em></h2>
+        </div>
+        <div class="spec-lines">
+          <article id="design">
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M2 9h20m-16-3v1m3-1v1" />
+            </svg>
+            <div>
+              <h3>Give each service a clear home</h3>
+              <p>
+                We organise your offer around what a potential client needs to
+                know. Page layouts, typography, and enquiry links work together
+                to lead visitors from interest to a conversation.
+              </p>
+            </div>
+          </article>
+          <article id="infrastructure">
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="9" />
+              <ellipse cx="12" cy="12" rx="4" ry="9" />
+              <path d="M3 12h18" />
+            </svg>
+            <div>
+              <h3>Put the essentials on one bill</h3>
+              <p>
+                Your domain is your website’s address. Hosting keeps its pages
+                accessible. Both sit inside your monthly subscription alongside
+                design.
+              </p>
+            </div>
+          </article>
+          <article id="updates">
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="5" width="20" height="14" rx="2" />
+              <path d="m3 6 9 7 9-7" />
+            </svg>
+            <div>
+              <h3>Turn one email into a list of edits</h3>
+              <p>
+                Send each list to
+                <a href="mailto:changes@domain.com">changes@domain.com</a>. Use
+                a single request to group related instructions, such as
+                replacing a service photo and updating the copy underneath it.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="work-order">
+        <div class="wrap order-grid">
+          <div>
+            <p class="eyebrow"><span></span>An example change request</p>
+            <h2>Make your next update <em>easy to action.</em></h2>
+            <p>
+              Include the page, the item to change, and the replacement content.
+              Attach the new image when you send your email.
+            </p>
+          </div>
+          <div class="mail-sheet">
+            <div class="mono">CHANGE REQUEST / EXAMPLE</div>
+            <p><b>To</b> changes@domain.com</p>
+            <p><b>Subject</b> Updates to my services page</p>
+            <blockquote>
+              Please update the consultation description with the text below and
+              replace the header photo with the attached image.
+            </blockquote>
+            <small>One email · One change request</small>
+          </div>
+        </div>
+      </section>
+      <section class="wrap block faq-layout">
+        <div>
+          <p class="eyebrow"><span></span>Scope &amp; practicalities</p>
+          <h2>Plan around the <em>details.</em></h2>
+        </div>
+        <div class="faq">
+          <div class="qa">
+            <h3>
+              <button
+                type="button"
+                aria-expanded="true"
+                aria-controls="answer-0"
+              >
+                Can I bring an existing website?<span aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="answer" id="answer-0">
+              <div>
+                <p>
+                  Yes, tell us where it lives and which pages you want to keep.
+                  We’ll review the starting point with you before agreeing the
+                  work.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="qa">
+            <h3>
+              <button
+                type="button"
+                aria-expanded="true"
+                aria-controls="answer-1"
+              >
+                Can I request a specific feature?<span
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </h3>
+            <div class="answer" id="answer-1">
+              <div>
+                <p>
+                  Describe the feature and the visitor action it should support.
+                  We’ll confirm whether it fits your subscription before work
+                  begins.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="qa">
+            <h3>
+              <button
+                type="button"
+                aria-expanded="true"
+                aria-controls="answer-2"
+              >
+                What should I prepare for design?<span
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </h3>
+            <div class="answer" id="answer-2">
+              <div>
+                <p>
+                  Gather your service descriptions, logo, images, and preferred
+                  contact details. Tell us what you already have so we can
+                  identify the gaps together.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="qa">
+            <h3>
+              <button
+                type="button"
+                aria-expanded="true"
+                aria-controls="answer-3"
+              >
+                Who can explain the terms?<span aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="answer" id="answer-3">
+              <div>
+                <p>
+                  Email queries@domain.com with billing, scope, or handover
+                  questions. We’ll help you understand the terms that apply to
+                  your project.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="closing">
+        <div class="wrap close-inner">
+          <div>
+            <p class="eyebrow"><span></span>Review your scope</p>
+            <h2>Does the plan fit <em>your brief?</em></h2>
+            <p>
+              Outline your pages and any special features. We’ll discuss the fit
+              before you subscribe.
+            </p>
+          </div>
+          <a class="button paper" href="contact.html#brief"
+            >Check my project<svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5.5 18.5 18 6M7 6h11v11" /></svg
+          ></a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap foot">
+        <a class="brand" href="index.html" aria-label="Web Affairs home"
+          ><img
+            src="assets/webaffairswordmark.PNG"
+            width="778"
+            height="130"
+            alt="Web Affairs" /></a
+        ><span>Indira Nagar, Lucknow, UP</span
+        ><a href="mailto:queries@domain.com"
+          >queries@domain.com
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M5.5 18.5 18 6M7 6h11v11" /></svg></a
+        ><small>© Web Affairs</small>
+      </div>
+    </footer>
+  </body>
+</html>

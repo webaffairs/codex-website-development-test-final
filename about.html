@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meet the studio in Lucknow | Web Affairs</title>
+    <meta
+      name="description"
+      content="Meet Web Affairs, the Lucknow web design studio building and maintaining websites for freelancers and service businesses."
+    />
+    <meta
+      property="og:title"
+      content="Meet the studio in Lucknow | Web Affairs"
+    />
+    <meta
+      property="og:description"
+      content="Meet Web Affairs, the Lucknow web design studio building and maintaining websites for freelancers and service businesses."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/favicon.png" />
+    <link
+      rel="preload"
+      href="assets/fonts/dm-sans-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <script>
+      try {
+        if (
+          sessionStorage.getItem("wa-arrival") === location.pathname &&
+          !matchMedia("(prefers-reduced-motion: reduce)").matches
+        )
+          document.documentElement.classList.add("arriving");
+        sessionStorage.removeItem("wa-arrival");
+      } catch {
+        /* Storage is optional. */
+      }
+    </script>
+    <script defer src="assets/vendor/lenis.min.js"></script>
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/animations.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Web Affairs",
+        "email": "queries@domain.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Indira Nagar",
+          "addressLocality": "Lucknow",
+          "addressRegion": "UP",
+          "addressCountry": "IN"
+        }
+      }
+    </script>
+    <noscript
+      ><style>
+        @media (max-width: 760px) {
+          .mast-row {
+            flex-wrap: wrap;
+            padding-block: 10px;
+          }
+          .menu-toggle {
+            display: none;
+          }
+          .mast nav {
+            position: static;
+            visibility: visible;
+            opacity: 1;
+            transform: none;
+            width: 100%;
+            padding: 0;
+            border: 0;
+            box-shadow: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            order: 3;
+          }
+          .mast nav a {
+            transform: none;
+            opacity: 1;
+            border: 0;
+            font-size: 0.85rem;
+            padding: 6px 0;
+          }
+          .mast nav .mobile-email {
+            display: none;
+          }
+        }
+        .gallery-controls {
+          display: none;
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="preload" aria-hidden="true">
+      <img src="assets/webaffairsicon.PNG" alt="" /><span
+        class="load-line"
+      ></span
+      ><span class="load-count">00%</span>
+    </div>
+    <div class="curtain" aria-hidden="true"></div>
+    <header class="mast">
+      <div class="wrap mast-row">
+        <a class="brand" href="index.html" aria-label="Web Affairs home"
+          ><img
+            src="assets/webaffairswordmark.PNG"
+            alt="Web Affairs"
+            width="778"
+            height="130"
+        /></a>
+        <nav aria-label="Primary" id="menu">
+          <a href="index.html">Home</a><a href="services.html">Services</a
+          ><a href="about.html" aria-current="page">About us</a
+          ><a href="contact.html">Contact</a
+          ><a class="mobile-email" href="mailto:queries@domain.com"
+            >queries@domain.com</a
+          >
+        </nav>
+        <a class="button ink" href="contact.html#brief"
+          >Let’s talk<svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M5.5 18.5 18 6M7 6h11v11" /></svg
+        ></a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Open navigation"
+        >
+          <i></i><i></i>
+        </button>
+      </div>
+      <div class="progress" aria-hidden="true"></div>
+    </header>
+    <main id="main">
+      <section class="wrap inner-hero about-hero">
+        <div>
+          <p class="eyebrow"><span></span>The studio / Lucknow, India</p>
+          <h1>Small studio.<br /><em>Direct line.</em></h1>
+          <p class="lede">
+            Web Affairs builds websites for people whose business depends on the
+            next conversation. We bring design, development, and everyday upkeep
+            under one roof.
+          </p>
+          <a class="button bare" href="contact.html#brief"
+            >Talk to the studio<svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+          ></a>
+        </div>
+        <figure class="identity">
+          <i class="reg tl"></i><i class="reg tr"></i><i class="reg bl"></i
+          ><i class="reg br"></i
+          ><img
+            src="assets/webaffairsicon.PNG"
+            alt="Web Affairs monogram"
+            width="324"
+            height="164"
+          />
+          <figcaption>WEB AFFAIRS <span>STUDIO MARK</span></figcaption>
+        </figure>
+      </section>
+      <section class="studio-letter">
+        <div class="wrap letter">
+          <div>
+            <p class="eyebrow"><span></span>A note from Web Affairs</p>
+            <span class="mono">INDIRA NAGAR<br />LUCKNOW, UP</span>
+          </div>
+          <div>
+            <h2>Keep the focus on <em>your craft.</em></h2>
+            <p>
+              A freelancer should be able to show a new service as soon as it’s
+              ready. A small business should be able to change a page without
+              finding another developer.
+            </p>
+            <p>
+              That’s why we built our studio around a subscription. You give us
+              the brief, we build around your audience, and you have a familiar
+              place to send the next update.
+            </p>
+            <span class="signature">Web Affairs</span>
+          </div>
+        </div>
+      </section>
+      <section class="wrap block principles">
+        <p class="eyebrow"><span></span>How we make decisions</p>
+        <h2>Every detail needs <em>a purpose.</em></h2>
+        <div class="principle-grid">
+          <article>
+            <span class="principle-symbol">Aa</span>
+            <h3>Make your offer readable</h3>
+            <p>
+              Headlines lead with the service and its value. The page gives a
+              potential client room to understand both.
+            </p>
+          </article>
+          <article>
+            <span class="principle-symbol">↗</span>
+            <h3>Give interest a direction</h3>
+            <p>
+              A visible enquiry route helps visitors act while the right
+              question is still on their mind.
+            </p>
+          </article>
+          <article>
+            <span class="principle-symbol">✳</span>
+            <h3>Design for the next edit</h3>
+            <p>
+              Services evolve. We organise the site so your next announcement,
+              image, or pricing change has a place to go.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="wrap studio-contact">
+        <div>
+          <h2>Reach the people <em>behind the pixels.</em></h2>
+          <p>
+            Share a little about your business with our team in Lucknow. Your
+            first message gives us a starting point for the conversation.
+          </p>
+        </div>
+        <a class="button solid" href="contact.html#brief"
+          >Introduce my business<svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M5.5 18.5 18 6M7 6h11v11" /></svg
+        ></a>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap foot">
+        <a class="brand" href="index.html" aria-label="Web Affairs home"
+          ><img
+            src="assets/webaffairswordmark.PNG"
+            width="778"
+            height="130"
+            alt="Web Affairs" /></a
+        ><span>Indira Nagar, Lucknow, UP</span
+        ><a href="mailto:queries@domain.com"
+          >queries@domain.com
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M5.5 18.5 18 6M7 6h11v11" /></svg></a
+        ><small>© Web Affairs</small>
+      </div>
+    </footer>
+  </body>
+</html>
