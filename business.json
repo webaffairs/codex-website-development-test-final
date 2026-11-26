@@ -1,0 +1,45 @@
+{
+  "businessName": "Web Affairs",
+  "businessType": "Service business",
+  "businessCategory": "Web Development & Design",
+  "industryNiche": "Website development agency",
+  "shortDescription": "We create and sell websites for only $50 a month. That includes hosting, domain and 5 changes a month. A change is basically an email with a list of instructions. The websites are expected to have an exceptional conversion rate and awwwards level design.",
+  "location": {
+    "city": "Lucknow",
+    "state": "UP",
+    "country": "India",
+    "full": "Indira Nagar, Lucknow, UP"
+  },
+  "websiteType": "business",
+  "requiredPages": [
+    "Home",
+    "Services",
+    "About us",
+    "Contact"
+  ],
+  "desiredFunctionality": [
+    "Contact Form"
+  ],
+  "marketingAndPositioning": {
+    "targetAudience": "Service business and Freelancers",
+    "mainServices": [
+      "We offer a website subscription which includes domain and hosting and is built to convert while looking awwward winning"
+    ],
+    "uniqueSellingProposition": "We have two USPs, one is simplicity. The onboarding process is simple: just fill out the contact form and wait for our reply, to request changes just email our changes email (changes@domain.com). Other is website quality: website's delivered by us exceptionally good in conversion rate and design. Far better and cheaper than what they would have gotten by our competitors.",
+    "mainCallToAction": "Generate enquiries & leads",
+    "preferredContactMethods": [
+      "Contact form"
+    ]
+  },
+  "contactDetails": {
+    "queries": "queries@domain.com",
+    "changes": "changes@domain.com",
+    "cancellation": "cancellation@domain.com"
+  },
+  "websiteObjectives": [
+    "Generate enquiries & leads"
+  ],
+  "colorPallete": [
+    "cool and corporate"
+  ]
+}
